@@ -115,7 +115,7 @@ namespace AJJCut
                 }
 
             });
-            Tb.Text = "把视频拖进来,在我会输出无片头片尾的视频";
+            Tb.Text = "把视频拖进来,在源目录我会输出无片头片尾的视频";
         }
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
