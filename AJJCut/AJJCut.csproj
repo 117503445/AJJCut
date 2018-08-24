@@ -106,9 +106,6 @@
   <ItemGroup>
     <Content Include="DLL\TLib.dll" />
     <Content Include="DLL\TLib.pdb" />
-    <Content Include="ffmpeg.exe">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Resource Include="Res\AJJCut.ico" />
     <Resource Include="Res\AJJCut.PNG" />
   </ItemGroup>
