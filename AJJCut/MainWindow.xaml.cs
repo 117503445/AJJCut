@@ -25,7 +25,11 @@ namespace AJJCut
         public MainWindow()
         {
             InitializeComponent();
-
+            if (!File.Exists(ffmpeg))
+            {
+                MessageBox.Show("请去下载ffmpeg.exe,并放置程序文件夹内");
+                Close();
+            }
         }
 
         private void Window_Drop(object sender, DragEventArgs e)
@@ -50,10 +54,7 @@ namespace AJJCut
 
             await Task.Run(() =>
             {
-                if (!File.Exists(ffmpeg))
-                {
-                    MessageBox.Show("请去下载ffmpeg.exe,并放置程序文件夹内");
-                }
+
                 string output = "";
                 using (Process process = new Process())
                 {
